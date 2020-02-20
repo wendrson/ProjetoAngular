@@ -1,0 +1,10 @@
+mat-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+mat-raised-button {
+  margin-right:5px;
+}
+

@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+th.mat-header-cell {
+    text-align: left;
+    max-width: 100px;
+}
+
+mat-form-field {
+  width: 30%;
+}
+
+
