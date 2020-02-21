@@ -1,26 +1,10 @@
-<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
-    <span> Angular App </span>
-    <span class="example-fill-remaining-space"></span>
-    <span class="align-center"></span>
-    <span class="example-spacer"></span>
-    <button mat-raised-button routerLink="about" routerLinkActive="mat-accent" style="margin-right:10px;"> About </button>
-    <button mat-raised-button routerLink="contact" routerLinkActive="mat-accent" style="margin-right:5px;"> Contact </button>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span> Redial </span>
-      </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span> Check voicemail </span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span> Disable </span>
-      </button>
-    </mat-menu>
-  </mat-toolbar>
-<app-user></app-user>
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="app-header">
+  <div><a href="https://www.angular" target="_blank" class="angular">Angular</a></div>
+  <span class="nav-tool-items">
+    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

@@ -1,3 +1,4 @@
+import { AuthGuard } from './../auth.guard';
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
@@ -7,11 +8,11 @@ import { ContactComponent } from './../contact/contact.component';
 import { AboutComponent } from './../about/about.component';
 
 const routes: Routes = [
-  { path: 'user', component: UserComponent },
+  { path: 'user', component: UserComponent, canActivate:[AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', component: LoginComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'login'},
 
 ];
 
@@ -19,7 +20,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
-  declarations: []
+  exports: [RouterModule]
 })
 
 export class AppRoutingModule { }

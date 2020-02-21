@@ -1,8 +1,8 @@
-<div class="ui-g-12 ui-fluid">
+
+
 <mat-form-field>
   <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter">
 </mat-form-field>
-</div>
 
 <table mat-table [dataSource]="dataSource" matSort>
 

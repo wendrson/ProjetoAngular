@@ -6,7 +6,7 @@ import {
   MatToolbarModule, MatMenuModule, MatIconModule, MatProgressSpinnerModule, MatSortModule, MatProgressSpinner, MatPaginatorModule
 } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   MatProgressSpinnerModule,
   MatFormFieldModule,
   ReactiveFormsModule,
+  FormsModule,
   MatSortModule,
   MatPaginatorModule
   ],
@@ -37,7 +38,9 @@ import { ReactiveFormsModule } from '@angular/forms';
    MatIconModule,
    MatProgressSpinnerModule,
    MatSortModule,
-     MatPaginatorModule
+     MatPaginatorModule,
+     FormsModule,
+     ReactiveFormsModule
 
    ],
 })

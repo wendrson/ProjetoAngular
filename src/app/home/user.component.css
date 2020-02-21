@@ -8,8 +8,12 @@ th.mat-header-cell {
     max-width: 100px;
 }
 
-mat-form-field {
+mat-card {
+  margin: 0.1px;
+  border: 0.1px;
+  padding: 0.1px;
   width: 20%;
+
 }
 
 

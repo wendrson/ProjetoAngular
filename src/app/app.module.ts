@@ -36,7 +36,7 @@ import { ContactComponent } from './contact/contact.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
