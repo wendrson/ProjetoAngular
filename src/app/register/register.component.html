@@ -22,7 +22,7 @@
         <mat-form-field class="example-full-width">
           <mat-label>Choose a role...</mat-label>
           <mat-select [(ngModel)]="role">
-            <mat-option *ngFor="let role of roles" [value]="role">{{role}}
+            <mat-option *ngFor="let role of roles" [value]="role">{{role.state}}
             </mat-option>
           </mat-select>
         </mat-form-field>

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Roles {
-  value: string;
-  viewValue: string;
+export interface Role {
+  name: string;
+  state: string;
 }
 
 @Component({
@@ -14,10 +14,10 @@ export interface Roles {
 
 export class RegisterComponent implements OnInit {
 
-  roles = [
-    { name: " Admin ", state: "ADM" },
-    { name: " User ", state: "USER" },
-    { name: " Visited ", state: "VISITED" },
+  roles: Role [] = [
+    { name: " Admin-0 ", state: "Admin" },
+    { name: " User-1 ", state: "User" },
+    { name: " Visited-2 ", state: "Visited" }
   ];
 
 
