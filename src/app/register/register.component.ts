@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Role {
-  name: string;
-  state: string;
+  value: string;
+  viewValue: string;
 }
 
 @Component({
@@ -14,16 +14,24 @@ export interface Role {
 
 export class RegisterComponent implements OnInit {
 
-  roles: Role [] = [
-    { name: " Admin-0 ", state: "Admin" },
-    { name: " User-1 ", state: "User" },
-    { name: " Visited-2 ", state: "Visited" }
+  selectedRoles = ['Admin-1', 'admin-0'];
+
+  allroles: Role [] = [
+    { value: ' admin-0 ', viewValue: 'Admin' },
+    { value: ' user-1 ', viewValue: 'User' },
+    { value: ' visited-2 ', viewValue: 'Visited' }
   ];
+
+  roles = [];
 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  register() {
+
   }
 
 }
