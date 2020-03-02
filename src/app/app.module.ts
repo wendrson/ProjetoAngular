@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CustomMaterialModule } from './core/material.module';
 import { AppRoutingModule } from './core/app.routing.module';
 import { FormsModule, } from '@angular/forms';
@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './home/user.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     LoginComponent,
     UserComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { ContactComponent } from './contact/contact.component';
     FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
